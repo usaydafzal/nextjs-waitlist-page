@@ -7,13 +7,13 @@ export default function Home() {
     <>
       <Toaster />
 
-      <section className="w-screen h-dvh grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="md:h-full h-80 bg-[#000000] relative overflow-hidden">
+      <section className="w-screen h-screen grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="flex justify-center items-center md:h-full h-80 bg-[#000000] relative">
           <Image
-            src="/mobile-app.png"
+            src="/mobile-app.png"  
             alt="Mobile App Screenshots"
-            fill
-            className="object-contain mt-8 md:mt-24 px-14 object-bottom"
+            layout="fill"  // Changed from 'fill' to 'fixed' if you need the image size to be constant
+            className="object-contain"  // You can remove `object-bottom` and other position-related classes if not necessary
           />
         </div>
 
